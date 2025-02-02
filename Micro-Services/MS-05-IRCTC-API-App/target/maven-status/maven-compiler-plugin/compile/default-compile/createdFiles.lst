@@ -1,0 +1,6 @@
+in\vikas\bindings\Passanger.class
+in\vikas\rest\TicketRestController.class
+in\vikas\Application.class
+in\vikas\bindings\Ticket.class
+in\vikas\service\TicketService.class
+in\vikas\service\TicketServiceImpl.class
