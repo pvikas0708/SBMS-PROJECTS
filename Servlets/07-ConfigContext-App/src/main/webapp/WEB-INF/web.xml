@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" id="WebApp_ID" version="5.0">
+  <display-name>07-ConfigContext-App</display-name>
+  <context-param>
+    <param-name>website</param-name>
+    <param-value>www.facebook.com</param-value>
+  </context-param>
+  <servlet>
+    <servlet-name>firstservlet</servlet-name>
+    <servlet-class>in.vikas.servlet.FirstServlet</servlet-class>
+    <init-param>
+      <param-name>msg</param-name>
+      <param-value>Welcome to first Servlet</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>firstservlet</servlet-name>
+    <url-pattern>/first</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>secondservlet</servlet-name>
+    <servlet-class>in.vikas.servlet.SecondServlet</servlet-class>
+    <init-param>
+      <param-name>msg</param-name>
+      <param-value>Welcome to Second Servlet</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>secondservlet</servlet-name>
+    <url-pattern>/second</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ThirdServlet</display-name>
+    <servlet-name>ThirdServlet</servlet-name>
+    <servlet-class>in.vikas.servlet.ThirdServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ThirdServlet</servlet-name>
+    <url-pattern>/ThirdServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
