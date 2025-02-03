@@ -1,0 +1,17 @@
+server:
+  port: 2222
+  
+spring:
+  application:
+    name: WELCOME_API
+    
+  boot:
+    admin:
+      client:
+        url: http://localhost:9090/
+    
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
