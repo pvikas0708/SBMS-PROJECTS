@@ -1,0 +1,12 @@
+# Conversion to YAML from Properties formar report
+# Warnings:
+# - The yaml file had comments which are lost in the refactoring!
+spring:
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3306/SBMS
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
